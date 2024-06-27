@@ -1,59 +1,58 @@
 % Ubah judul dan label berikut sesuai dengan yang diinginkan.
 \section{Arsitektur}
-\label{sec:arsitektur}
+\label{sec:architecture}
 
 % Ubah paragraf-paragraf pada bagian ini sesuai dengan yang diinginkan.
 
 \subsection{Dataset Penelitian}
 \label{subsec:dataset}
 
-Data yang digunakan dalam penelitian ini adalah data yang diperoleh dari Diabetic Retinopathy Analisis Grand challenge, berupa citra OCT-\emph{Angiography}.
-Untuk persebaran data yang digunakan pada penelitian ini, terdapat pada tabel \ref{table:Datasettraining}
+The data utilized in this study were obtained from the Diabetic Retinopathy Analysis Grand Challenge, in the form of OCT-Angiography images.
+A table, referenced as Table \ref{table:Datasettraining} in the text, provides a detailed overview of the data distribution utilized in this study.
+\begin{figure}[hbtp]
+	\centering
+	\subfloat[\centering Non-DR]{{\includegraphics[width=2.5cm]{gambar/non-DR.png} }}%
+	\subfloat[\centering NPDR]{{\includegraphics[width=2.5cm]{gambar/NPDR.png} }}%
+	\subfloat[\centering PDR]{{\includegraphics[width=2.5cm]{gambar/PDR.png} }}%
+	\caption{Contoh Data Citra Retina}
+	\label{fig:sampleDataset}
+\end{figure}
 
-	\begin{figure}[hbtp]
-		\centering
-		\subfloat[\centering Non-DR]{{\includegraphics[width=2.5cm]{gambar/non-DR.png} }}%
-		\subfloat[\centering NPDR]{{\includegraphics[width=2.5cm]{gambar/NPDR.png} }}%
-		\subfloat[\centering PDR]{{\includegraphics[width=2.5cm]{gambar/PDR.png} }}%
-		\caption{Contoh Data Citra Retina}
-		\label{fig:sampleDataset}
-	\end{figure}
-Gambar yang diberikan adalah foto fundus retina yang digunakan untuk evaluasi retinopati diabetik. Foto ini menunjukkan detail dari jaringan pembuluh darah retina, disk optik, dan area makula. Berikut adalah deskripsi rinci dari gambar tersebut:
+The image provided is a retinal fundus photograph, which is utilized for the evaluation of diabetic retinopathy. The image depicts the intricate details of the retinal vascular network, the optic disk, and the macular area. The following section provides a comprehensive account of the image in question.
 
-Informasi Dataset dari Tantangan DRAC
-Dataset yang digunakan untuk pelatihan dan pengujian terdiri dari:
+Dataset Information from the DRAC Challenge
+The dataset utilized for training and testing comprises the following:
 
 	\begin{itemize}
-		\item Set Pelatihan: 611 gambar
-		\item Set Uji: 386 gambar
+		\item Training Set: 611 gambar
+		\item Testing Set: 386 gambar
 	\end{itemize}
-Gambar-gambar pada set pelatihan, kemudian dipisah kembali menjadi dua set, yaitu set untuk pelatihan dan set untuk validasi dengan jumlah sesuai pada tabel \ref{table:Datasettraining}
+Subsequently, the images in the training set are divided into two subsets, namely the training set and the validation set, with the number of images in each subset determined in accordance with the specifications outlined in Table \ref{table:Datasettraining}.
+\begin{table}[hbtp]
+	\begin{center}
+	\caption{Table of distribution Set for Training and Validation}
+	\label{table:Datasettraining}
+	\begin{tabular}{|l|l|l|l|}
+		\hline
+		\rowcolor[HTML]{C0C0C0} 
+		Label                                                & Classification & Amount & Total                                         \\ \hline
+		\rowcolor[HTML]{FFFFFF} 
+		\cellcolor[HTML]{FFFFFF}                             & non-DR      & 263    & \cellcolor[HTML]{FFFFFF}                      \\ \cline{2-3}
+		\rowcolor[HTML]{FFFFFF} 
+		\cellcolor[HTML]{FFFFFF}                             & NPDR        & 169    & \cellcolor[HTML]{FFFFFF}                      \\ \cline{2-3}
+		\rowcolor[HTML]{FFFFFF} 
+		\multirow{-3}{*}{\cellcolor[HTML]{FFFFFF}Training}   & PDR         & 56     & \multirow{-3}{*}{\cellcolor[HTML]{FFFFFF}488} \\ \hline
+		\rowcolor[HTML]{FFFFFF} 
+		\cellcolor[HTML]{FFFFFF}                             & non-DR      & 66     & \cellcolor[HTML]{FFFFFF}                      \\ \cline{2-3}
+		\rowcolor[HTML]{FFFFFF} 
+		\cellcolor[HTML]{FFFFFF}                             & NPDR        & 43     & \cellcolor[HTML]{FFFFFF}                      \\ \cline{2-3}
+		\rowcolor[HTML]{FFFFFF} 
+		\multirow{-3}{*}{\cellcolor[HTML]{FFFFFF}Validation} & PDR         & 14     & \multirow{-3}{*}{\cellcolor[HTML]{FFFFFF}123} \\ \hline
+		\end{tabular}
+	\end{center}
+\end{table}
 
-%\begin{table}[hbtp]
-%	\begin{center}
-%	\caption{Tabel distribusi Set untuk Pelatihan dan Validasi}
-%	\label{table:Datasettraining}
-%	\begin{tabular}{|l|l|l|l|}
-%		\hline
-%		\rowcolor[HTML]{C0C0C0} 
-%		Label                                                & Klasifikasi & Jumlah & Total                                         \\ \hline
-%		\rowcolor[HTML]{FFFFFF} 
-%		\cellcolor[HTML]{FFFFFF}                             & non-DR      & 263    & \cellcolor[HTML]{FFFFFF}                      \\ \cline{2-3}
-%		\rowcolor[HTML]{FFFFFF} 
-%		\cellcolor[HTML]{FFFFFF}                             & NPDR        & 169    & \cellcolor[HTML]{FFFFFF}                      \\ \cline{2-3}
-%		\rowcolor[HTML]{FFFFFF} 
-%		\multirow{-3}{*}{\cellcolor[HTML]{FFFFFF}Training}   & PDR         & 56     & \multirow{-3}{*}{\cellcolor[HTML]{FFFFFF}488} \\ \hline
-%		\rowcolor[HTML]{FFFFFF} 
-%		\cellcolor[HTML]{FFFFFF}                             & non-DR      & 66     & \cellcolor[HTML]{FFFFFF}                      \\ \cline{2-3}
-%		\rowcolor[HTML]{FFFFFF} 
-%		\cellcolor[HTML]{FFFFFF}                             & NPDR        & 43     & \cellcolor[HTML]{FFFFFF}                      \\ \cline{2-3}
-%		\rowcolor[HTML]{FFFFFF} 
-%		\multirow{-3}{*}{\cellcolor[HTML]{FFFFFF}Validation} & PDR         & 14     & \multirow{-3}{*}{\cellcolor[HTML]{FFFFFF}123} \\ \hline
-%		\end{tabular}
-%	\end{center}
-%\end{table}
-
-Sedangkan gambar pada set uji digunakan untuk mendapatkan penilaian online menggunakan metrik Quadratic Weighted Kappa dengan model dari DRAC sebagai pembandingnya. dan dikarenakan set uji yang diberikan ini tidak memiliki label, maka set ini tidak dapat dipergunakan untuk pengambilan metrik lain seperti \emph{precision, recall}, dan \emph{F1-score}.
+The images in the test set are employed to obtain an online assessment using the Quadratic Weighted Kappa metric, with the model from DRAC serving as a point of comparison. However, due to the absence of a label in the given test set, it is not feasible to utilize this set for the calculation of other metrics, such as precision, recall, and F1-score.
 
 \subsection{Methodology}
 \label{subsec:loremipsum}
@@ -80,8 +79,8 @@ Dalam penelitian ini, dikarenakan oleh dataset yang sedikit dan ada class yang k
 
 \subsection{Pelatihan Model}
 \label{sec:325}
-Pelatihan model dilakukan dengan menggunakan metode \emph{transfer learning}. Metode \emph{transfer learning} dilakukan dengan menggunakan model ResNet yang sudah dipilih dan sudah dilatih dengan dataset ImageNet.
-Arsitektur model yang digunakan sesuai pada penjelasan bagian \ref{sec:323} dengan menggunakan \emph{hyper-parameter} yang ada pada tabel \ref{tb:hyperParameterTraining}
+The training of the model is conducted using the transfer learning method. The transfer learning method is performed using the ResNet model, which has been selected and trained with the ImageNet dataset.
+The model architecture utilized is as described in \ref{subsec:loremipsum}, with the hyperparameters specified in Table \ref{tb:hyperParameterTraining}.
 \begin{table}[hbtp]
 	\begin{center}
 		\caption{Hyperparameter}
@@ -102,17 +101,3 @@ Arsitektur model yang digunakan sesuai pada penjelasan bagian \ref{sec:323} deng
 	\end{center}
 \end{table}
 
-
-% Contoh pembuatan potongan kode.
-%\begin{lstlisting}[
-%  language=C++,
-%  caption={Program halo dunia.},
-%  label={lst:halodunia}
-%]
-%#include <iostream>
-%
-%int main() {
-%    std::cout << "Halo Dunia!";
-%    return 0;
-%}
-%\end{lstlisting}

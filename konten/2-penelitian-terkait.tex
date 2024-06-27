@@ -1,13 +1,14 @@
 % Ubah judul dan label berikut sesuai dengan yang diinginkan.
-\section{Penelitian Terkait}
-\label{sec:penelitianterkait}
+\section{Related Research}
+\label{sec:relatedresearch}
 
 \subsection{\emph{Classification of Diabetic Retinopathy Based on B-ResNet}}
 \label{subsec:penelitianTerdahulu1}
-Zhang dan rekan \citet{zhang2022residual} pada penelitiannya menggunakan data set Eye-PACS, MESSIDOR-2, dan IDRiD untuk membangun data set DR dengan pembersihan, penguatan, dan normalisasi gambar. Selain itu, digunakan metode prapemrosesan gambar yang ditingkatkan untuk meningkatkan fitur gambar fundus. Model B-ResNet dibangun dengan menggabungkan keunggulan ekstraksi fitur ResNet50 dan fusi fitur BCNN. Selain itu, sebelum fusi fitur, gambar fitur yang diekstraksi oleh ResNet50 diproses oleh modul perhatian saluran. ResNet50 dipralatih pada data set ImageNet dan parameternya di-fine-tune melalui transfer learning.
+ 
+Zhang and colleagues \citet{zhang2022residual} utilized the Eye-PACS, MESSIDOR-2, and IDRiD datasets to construct the DR dataset through image cleaning, enhancement, and normalization. Additionally, an enhanced image preprocessing method was employed to enhance the fundus image features. The B-ResNet model was developed by integrating the strengths of ResNet50 feature extraction and BCNN feature fusion. Furthermore, prior to feature fusion, the extracted feature images from ResNet50 undergo processing by the channel attention module. ResNet50 is trained on the ImageNet dataset and its parameters are fine-tuned through transfer learning.
 
-Hasil penelitian menunjukkan bahwa model B-ResNet mencapai akurasi 71,11\% , ACA 0,714, Kappa 0,634, dan macro-F1 0,711. Hasil ini lebih tinggi daripada penelitian sebelumnya. Percobaan perbandingan membuktikan bahwa metode prapemrosesan gambar yang ditingkatkan meningkatkan akurasi, ACA, Kappa, dan nilai macro-F1 model.
+The results demonstrated that the B-ResNet model achieved an accuracy of 71.11\%, ACA of 0.714, Kappa of 0.634, and macro-F1 of 0.711. These results exceed those of previous studies. The comparison experiment demonstrated that the enhanced image preprocessing method enhanced the accuracy, ACA, Kappa, and macro-F1 values of the model.
 
 \subsection{\emph{A Deep Learning Framework for Detection and Classification of Diabetic Retinopathy in FundusImages Using Residual Neural Networks}}
-\label{subsec:penelitianTerdahulu2}
-Abini dan rekan \citet{10335079} melakukan studi menggunakan model ResNet, yang dilatih dengan dataset APTOS, untuk melakukan klasifikasi biner dan multikelas menggunakan jaringan saraf konvolusional dalam (deep convolutional neural network). Hasil eksperimen menunjukkan bahwa model dengan lapisan dalam seperti ResNet-50 dapat meningkatkan kinerja keseluruhan dataset. Ini mengindikasikan bahwa penggunaan model ResNet-50 dalam klasifikasi DR dapat menjadi lebih efisien dalam hal waktu, tenaga kerja, dan biaya dibandingkan dengan metode diagnostik manual.
+\label{subsec:penelitianTerdahulu2} 
+Abini and colleagues \citet{10335079} conducted a study using the ResNet model, trained on the APTOS dataset, to perform binary and multiclass classification using deep convolutional neural networks. The experimental results demonstrate that models with deep layers, such as ResNet-50, can enhance the overall performance of the dataset. This suggests that the utilization of ResNet-50 models in DR classification can be more expedient, cost-effective, and labor-saving compared to manual diagnostic methods.
