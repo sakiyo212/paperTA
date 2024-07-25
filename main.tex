@@ -11,7 +11,7 @@
 \usepackage[utf8]{inputenc}
 
 % Format bahasa menjadi bahasa german dan inggris.
-\usepackage[indonesian]{babel}
+\usepackage[english]{babel}
 
 % Digunakan untuk tujuan demonstrasi.
 \usepackage{mwe}
@@ -58,9 +58,9 @@
 % Menambah nama penulis ketika menggunakan perintah \citet.
 % Untuk informasi lebih lanjut, lihat https://tex.stackexchange.com/a/76075/9075.
 \usepackage{etoolbox}
-\makeatletter
-\patchcmd{\NAT@test}{\else \NAT@nm}{\else \NAT@hyper@{\NAT@nm}}{}{}
-\makeatother
+%\makeatletter
+%\patchcmd{\NAT@test}{\else \NAT@nm}{\else \NAT@hyper@{\NAT@nm}}{}{}
+%\makeatother
 
 % Digunakan untuk melakukan linewrap pada pustaka dengan url yang panjang
 % jika terdapat hyphens

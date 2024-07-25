@@ -8,31 +8,31 @@ The testing process involves three models, namely the model with the highest tra
 
 The results of this study were evaluated using several additional metrics, including precision, recall, and F1-score. These metrics are employed to assess the accuracy of the model that has been developed.
 \subsection{Model Testing Results Without Using class-weight Adjustment}
-\begin{figure}[hbtp]
+\begin{figure}[H]
 	\centering
 	\includegraphics[height=4cm]{gambar/TrainingGraphResNet18.png}
-	\caption{Grafik Training Loss dan akurasi ResNet-18 Tanpa Penyesuaian Beban pada \emph{Class}}
+	\caption{Graph of Training Loss and Accuracy from ResNet-18 Without Class-weight Adjustment}
 	\label{Fig:GraphTrainingDefPt1}
 \end{figure}
-\begin{figure}[hbtp]
+\begin{figure}[H]
 	{\includegraphics[height=4cm]{gambar/TrainingGraphResNet34.png}}
-	\caption{Grafik Training Loss dan akurasi ResNet-34 Tanpa Penyesuaian Beban pada \emph{Class}}
+	\caption{Graph of Training Loss and Accuracy from ResNet-34 Without Class-weight Adjustment}
 	\label{Fig:GraphTrainingDefPt2}
 \end{figure}
-\begin{figure}[hbtp]
+\begin{figure}[H]
 	\centering
 	{\includegraphics[height=4cm]{gambar/TrainingGraphResNet50.png}}
-	\caption{Grafik Training Loss dan akurasi ResNet-50 Tanpa Penyesuaian Beban pada \emph{Class}}
+	\caption{Graph of Training Loss and Accuracy from ResNet-50 Without Class-weight Adjustment}
 	\label{Fig:GraphTrainingDefPt3}
 \end{figure}
-\begin{figure}[hbtp]
+\begin{figure}[H]
 	{\includegraphics[height=4cm]{gambar/TrainingGraphResNet101.png}}
-	\caption{Grafik Training Loss dan akurasi ResNet-101 Tanpa Penyesuaian Beban pada \emph{Class}}
+	\caption{Graph of Training Loss and Accuracy from ResNet-101 Without Class-weight Adjustment}
 	\label{Fig:GraphTrainingDefPt4}
 \end{figure}
-\begin{figure}[hbtp]
+\begin{figure}[H]
 	{\includegraphics[height=4cm]{gambar/TrainingGraphResNet152.png}}
-	\caption{Grafik Training Loss dan akurasi ResNet-152 Tanpa Penyesuaian Beban pada \emph{Class}}
+	\caption{Graph of Training Loss and Accuracy from ResNet-152 Without Class-weight Adjustment}
 	\label{Fig:GraphTrainingDefPt5}
 \end{figure}
 
@@ -41,35 +41,35 @@ The results of this study were evaluated using several additional metrics, inclu
 \begin{figure}[hbtp]
 	\centering
 	{\includegraphics[height=4cm]{gambar/TrainingGraphResNet18class-weighted.png}}
-	\caption{Grafik Training Loss dan akurasi ResNet-18 dengan Penyesuaian Beban pada \emph{Class}}
+	\caption{Graph of Training Loss and Accuracy from ResNet-18 With Class-weight Adjustment}
 	\label{fig:graphTrainingWeightedPt1}
 \end{figure}
 \begin{figure}[hbtp]
 	{\includegraphics[height=4cm]{gambar/TrainingGraphResNet34class-weighted.png}}
-	\caption{Grafik Training Loss dan akurasi ResNet-34 dengan Penyesuaian Beban pada \emph{Class}}
+	\caption{Graph of Training Loss and Accuracy from ResNet-34 With Class-weight Adjustment}
 	\label{fig:graphTrainingWeightedPt2}
 \end{figure}
 \begin{figure}[hbtp]
 	\centering
 	{\includegraphics[height=4cm]{gambar/TrainingGraphResNet50class-weighted.png}}
-	\caption{Grafik Training Loss dan akurasi ResNet-50 dengan Penyesuaian Beban pada \emph{Class}}
+	\caption{Graph of Training Loss and Accuracy from ResNet-50 With Class-weight Adjustment}
 	\label{fig:graphTrainingWeightedPt3}
 \end{figure}
 \begin{figure}[hbtp]
 	{\includegraphics[height=4cm]{gambar/TrainingGraphResNet101class-weighted.png}}
-	\caption{Grafik Training Loss dan akurasi 101 dengan Penyesuaian Beban pada \emph{Class}}
+	\caption{Graph of Training Loss and Accuracy from ResNet-101 With Class-weight Adjustment}
 	\label{fig:graphTrainingWeightedPt4}
 \end{figure}
 \begin{figure}[hbtp]
 	\centering
 	{\includegraphics[height=4cm]{gambar/TrainingGraphResNet152class-weighted.png}}
-	\caption{Grafik Training Loss dan akurasi ResNet-152 dengan Penyesuaian Beban pada \emph{Class}}
+	\caption{Graph of Training Loss and Accuracy from ResNet-152 With Class-weight Adjustment}
 	\label{fig:graphTrainingWeightedPt5}
 \end{figure}
 
 \begin{table}[hbtp]
 	\begin{center}
-	\caption{Perbandingan Nilai Akurasi, Recall pada class PDR. dan QWK dari setiap \emph{Best Trained Model} dengan Pembebanan pada \emph{Class} dan tanpa Pembebanan pada \emph{Class}}
+	\caption{Comparison of accuracy, recall on PDR class, and QWK of each best trained model with class weighting and without class weighting.}
 	\label{tb:PerbandinganHasilBestTrain}
         \resizebox{\linewidth}{!}{%
     	\begin{tabular}{|c|c|lll|ccc|}
@@ -93,7 +93,7 @@ The results of this study were evaluated using several additional metrics, inclu
 
 \begin{table}[hbtp]
 	\begin{center}
-	\caption{Perbandingan Nilai Akurasi, Recall pada class PDR. dan QWK dari setiap \emph{Best Validated Model} dengan Pembebanan pada \emph{Class} dan tanpa Pembebanan pada \emph{Class}}
+	\caption{Comparison of Accuracy, Recall on PDR class, and QWK of each best validated model with class weighting and without class weighting.}
 	\label{tb:PerbandinganHasilBestVal}
         \resizebox{\linewidth}{!}{%
     	\begin{tabular}{|c|c|lll|ccc|}
@@ -117,7 +117,7 @@ The results of this study were evaluated using several additional metrics, inclu
 
 \begin{table}[hbtp]
 \begin{center}
-	\caption{Perbandingan Nilai Akurasi, Recall pada class PDR. dan QWK dari setiap \emph{Last Trained Model} dengan Pembebanan pada \emph{Class} dan tanpa Pembebanan pada \emph{Class}}
+	\caption{Comparison of accuracy, recall on PDR class, and QWK of each Last Trained Model with Class weighting and without Class weighting.}
 	\label{tb:PerbandinganHasilLastTrained}
         \resizebox{\linewidth}{!}{%
     	\begin{tabular}{|c|c|lll|ccc|}
@@ -139,10 +139,4 @@ The results of this study were evaluated using several additional metrics, inclu
 \end{center}
 \end{table}
 
-% Contoh input potongan kode dari file.
-%\lstinputlisting[
-%  language=Python,
-%  caption={Program perhitungan bilangan prima.},
-%  label={lst:bilanganprima}
-%]{program/bilangan-prima.py}
 

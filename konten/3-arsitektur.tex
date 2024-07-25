@@ -1,10 +1,18 @@
 % Ubah judul dan label berikut sesuai dengan yang diinginkan.
-\section{Arsitektur}
+\section{Architecture}
 \label{sec:architecture}
 
 % Ubah paragraf-paragraf pada bagian ini sesuai dengan yang diinginkan.
+\begin{figure}[hbtp] \centering
+	% Nama dari file gambar yang diinputkan
+	\includegraphics[scale=0.4]{gambar/diagramMethod.png}
+	% Keterangan gambar yang diinputkan
+	\caption{Methodology Diagram}
+	% Label referensi dari gambar yang diinputkan
+	\label{fig:diagramMethod}
+\end{figure}
 
-\subsection{Dataset Penelitian}
+\subsection{Dataset}
 \label{subsec:dataset}
 
 The data utilized in this study were obtained from the Diabetic Retinopathy Analysis Grand Challenge, in the form of OCT-Angiography images.
@@ -14,7 +22,7 @@ A table, referenced as Table \ref{table:Datasettraining} in the text, provides a
 	\subfloat[\centering Non-DR]{{\includegraphics[width=2.5cm]{gambar/non-DR.png} }}%
 	\subfloat[\centering NPDR]{{\includegraphics[width=2.5cm]{gambar/NPDR.png} }}%
 	\subfloat[\centering PDR]{{\includegraphics[width=2.5cm]{gambar/PDR.png} }}%
-	\caption{Contoh Data Citra Retina}
+	\caption{Example of Fundus Images in the Dataset}
 	\label{fig:sampleDataset}
 \end{figure}
 
@@ -57,27 +65,19 @@ The images in the test set are employed to obtain an online assessment using the
 \subsection{Methodology}
 \label{subsec:loremipsum}
 
-Perbandingan metode skenario yang digunakan dalam pelatihan model ResNet:
-Dalam penelitian ini, dikarenakan oleh dataset yang sedikit dan ada class yang kurang representatif, dilakukan beberapa metode untuk penyeimbangan dataset.
+The scenarios utilized for performance enhancement in ResNet model training are as follows. In this study, due to the limited dataset and the presence of unrepresentative classes, several methods were employed to achieve dataset balance.
+
 \begin{itemize}
 	\item Default
 	
-	Tidak ada Tindakan yang dilakukan untuk menyeimbangkan dataset. Metode ini dilakukan untuk variabel kontrol
-	\item Penyesuaian \emph{Class-weight}
+	No action was taken to balance the dataset. This method is performed for the control variable.
 	
-	Pada metode ini, dilakukan penambahan weight agar class yang underrepresented memiliki beban lebih tinggi
+	\item Class-weight adjustment
+	
+	In this method, weight is added so that the underrepresented class has a higher weight.
 \end{itemize}
 
-\begin{figure}[hbtp] \centering
-	% Nama dari file gambar yang diinputkan
-	\includegraphics[scale=0.5]{gambar/diagramMethod.png}
-	% Keterangan gambar yang diinputkan
-	\caption{Diagram blok metodologi}
-	% Label referensi dari gambar yang diinputkan
-	\label{fig:diagramMethod}
-\end{figure}
-
-\subsection{Pelatihan Model}
+\subsection{Model Training}
 \label{sec:325}
 The training of the model is conducted using the transfer learning method. The transfer learning method is performed using the ResNet model, which has been selected and trained with the ImageNet dataset.
 The model architecture utilized is as described in \ref{subsec:loremipsum}, with the hyperparameters specified in Table \ref{tb:hyperParameterTraining}.
